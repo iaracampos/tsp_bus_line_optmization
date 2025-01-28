@@ -1,6 +1,7 @@
 import os
 import numpy as np
 from haversine import haversine, Unit
+from mst import *
 
 # Função para extrair coordenadas EUC_2D
 def euclidean_conversion(content):
@@ -109,7 +110,7 @@ def read_instances(path):
 
 def main():
     input_path = "./instances"
-    read_instances(input_path)
+    # read_instances(input_path)
     
     # # Configurações para exibir matrizes inteiras
 
@@ -119,8 +120,18 @@ def main():
     #     suppress=True      # Evita a notação científica para números pequenos
     # )
 
-    # matrix = np.load("./instances/adjacency_matrices/02_adjacency.npy")
-    # print(matrix)
+    matrix = np.load("./instances/adjacency_matrices/01_adjacency.npy")
+    print(matrix)
+
+    # Função para pegar os vizinhos mais próximos de um ponto de origem
+    # TODO: Esta função está retornando na verdade os vizinhos mais proximos dos dois indices que possuem maior distância entre eles
+    # closest_neighbors_data = closest_neighbors(matrix)
+
+    # Essa linha é para poder pegar o primeiro indice a ser retornado, e encontrar os vizinhos mais próximos a partir dele
+    # cluster = next(iter(closest_neighbors_data))
+
+    # print(mst(matrix,closest_neighbors_data[cluster]))
+
 
 if __name__ == "__main__":
     main()
