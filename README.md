@@ -22,18 +22,8 @@ Instalação
 
 Clone este repositório para o seu ambiente local:
 
-git clone https://github.com/seu-usuario/tsp-solver.git
-cd tsp-solver
-
-Instale as dependências necessárias:
-
-pip install -r requirements.txt
-
-Execução
-
-Para resolver as instâncias do problema TSP em um diretório de entrada, execute o script main.py:
-
-python main.py
+git clone https://github.com/iaracampos/tsp_bus_line_optmization
+cd tsp_bus_line_optmization
 
 O script vai:
 
@@ -61,6 +51,7 @@ Dependências
 Instale as dependências com o comando:
 
 pip install numpy haversine
+
 
 Colaboradores  Iara Campos 
 Gabriel Camargos Alves
