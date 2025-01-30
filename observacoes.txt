@@ -1,9 +1,0 @@
-Observacoes: 
-
-Uma instancia esta em latitude e longitude, a outra esta em distancia euclidiana ( deve se tratar a notacoes cientificas e3 u e2) 
-
--instancia latitude e longitude? https://stackoverflow.com/questions/18204801/travelling-salesman-with-latitude-longitude-coordinates  (Haversine Formula)
-
-- instancia normal, tratar o dado transformar string p inteiro e acrescentar os respectivos 0s do e+alguma coisa 
-
-
